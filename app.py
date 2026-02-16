@@ -1,44 +1,30 @@
 import streamlit as st
 from openai import OpenAI
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.document_loaders import TextLoader
-from langchain.text_splitter import CharacterTextSplitter
 
-# Streamlit page config
 st.set_page_config(page_title="Ask Keerthana AI", page_icon="🤖")
 
 st.title("Ask Keerthana AI 🤖")
-st.write("Ask me about my experience, projects, or skills!")
+st.write("Ask about my experience, skills, or projects!")
 
-# Load OpenAI API key from Streamlit secrets
+# Load API key
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Load profile data
-loader = TextLoader("profile_data.txt")
-documents = loader.load()
-
-# Split text into chunks
-text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-docs = text_splitter.split_documents(documents)
-
-# Create embeddings
-embeddings = OpenAIEmbeddings(api_key=st.secrets["OPENAI_API_KEY"])
-vectorstore = FAISS.from_documents(docs, embeddings)
+with open("profile_data.txt", "r") as file:
+    profile_info = file.read()
 
 # Chat input
 query = st.chat_input("Ask a question about Keerthana...")
 
 if query:
-    results = vectorstore.similarity_search(query, k=3)
-    context = "\n".join([doc.page_content for doc in results])
-
     prompt = f"""
     You are an AI assistant representing Keerthana Bellam.
-    Answer professionally and clearly using ONLY the information provided below.
+
+    Answer professionally and clearly using ONLY the information below.
+    If the answer is not in the information, say you don't have that information.
 
     Information:
-    {context}
+    {profile_info}
 
     Question:
     {query}
