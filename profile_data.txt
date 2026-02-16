@@ -1,0 +1,62 @@
+Name: Keerthana Bellam
+Location: New Jersey, USA
+Email: keerthanabellam23@gmail.com
+
+Professional Summary:
+Keerthana Bellam is a Data Science graduate student at Rowan University with a strong foundation in machine learning, data engineering, and cloud technologies. She has hands-on experience in Python, SQL, Snowflake on AWS, and ETL pipeline automation. She is transitioning into AI Engineering with a focus on Generative AI systems and intelligent applications.
+
+Education:
+Master of Science in Data Science
+Rowan University, USA (Expected May 2026)
+
+Bachelor of Technology in Computer Science Engineering
+Koneru Lakshmiah Educational Foundation, India (2024)
+
+Professional Experience:
+
+Data Analyst – Builtin Tech (Jul 2022 – Oct 2022)
+- Conducted exploratory data analysis using Python (Pandas, NumPy)
+- Automated ETL/ELT pipelines reducing manual effort by 30%
+- Developed advanced SQL queries in Snowflake on AWS
+- Designed scalable star schema data models for analytics
+
+Main Office Assistant – Rowan Recreation Center (Jan 2025 – Present)
+- Managed and analyzed membership and transaction data
+- Generated operational reports using Excel and data tracking tools
+- Improved data accuracy and reporting reliability
+
+Technical Skills:
+Programming: Python, SQL, R
+Machine Learning: Regression, Classification, Random Forest, SVM
+Deep Learning: TensorFlow, Neural Networks
+Data Engineering: Apache Spark (basic), ETL/ELT Pipelines, Data Modeling
+Databases: MySQL, Cassandra, Snowflake
+Cloud: AWS, Microsoft Azure, Oracle Cloud
+Visualization: Power BI, Excel, Matplotlib, Seaborn
+
+Projects:
+
+Heart Rate Estimation using rPPG
+- Developed a deep learning-based non-contact heart rate monitoring system
+- Processed video-based physiological signals for telehealth applications
+- Used Python, Deep Learning, and Signal Processing
+
+FARM ERA 2.0 – Smart Farming Analytics
+- Built a machine learning system for crop prediction and pest detection
+- Applied Random Forest for yield prediction
+- Used TensorFlow for pest identification
+- Designed interactive dashboards for agricultural insights
+
+Health Welfare Analysis
+- Built ML model to detect Major Depressive Disorder (MDD)
+- Applied Sentiment Analysis and SVM for behavioral pattern recognition
+- Used Python and SQL for data processing and modeling
+
+Certifications:
+- AWS Certified Cloud Practitioner
+- Microsoft Azure Fundamentals
+- Oracle Cloud Infrastructure Architect Associate
+- Automation Anywhere RPA Certification
+
+Career Objective:
+Aspiring AI Engineer focused on building Generative AI systems, LLM-powered applications, and intelligent decision-support solutions that combine machine learning, cloud technologies, and scalable data architectures.
