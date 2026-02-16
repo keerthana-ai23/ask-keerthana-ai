@@ -1,5 +1,2 @@
 streamlit
 openai
-langchain
-faiss-cpu
-tiktoken
