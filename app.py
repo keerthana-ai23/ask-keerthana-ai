@@ -1,6 +1,32 @@
 import streamlit as st
 from openai import OpenAI
 
+# ---- CUSTOM PINK THEME ----
+st.markdown("""
+    <style>
+    body {
+        background-color: #fff0f6;
+    }
+    .stApp {
+        background-color: #fff0f6;
+    }
+    h1, h2, h3 {
+        color: #d63384;
+    }
+    .stButton>button {
+        background-color: #ff69b4;
+        color: white;
+        border-radius: 10px;
+        border: none;
+    }
+    .stTextInput>div>div>input {
+        border: 2px solid #ff69b4;
+        border-radius: 10px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.set_page_config(page_title="Keerthana Bellam | AI Portfolio", layout="wide")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
