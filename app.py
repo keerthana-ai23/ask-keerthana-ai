@@ -27,7 +27,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.set_page_config(page_title="Keerthana Bellam | AI Portfolio", layout="wide")
+st.markdown("<h1 style='color:#ff1493;'>Keerthana Bellam 💕</h1>", unsafe_allow_html=True)
+
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
@@ -64,8 +65,9 @@ with col2:
 
 # ---- FLOATING CHATBOT ----
 
-st.markdown("---")
-st.markdown("### 🤖 Ask My AI Assistant")
+st.markdown("<h3 style='color:#c2185b;'>💬 Ask My AI Assistant</h3>", unsafe_allow_html=True)
+
+
 
 query = st.text_input("Ask about my experience, skills, or projects")
 
