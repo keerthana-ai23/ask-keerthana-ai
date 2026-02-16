@@ -14,7 +14,7 @@ with open("profile_data.txt", "r") as file:
 col1, col2 = st.columns([1, 2])
 
 with col1:
-    st.image("your_photo.jpg", width=250)
+    st.image("profile.jpeg", width=250)
     st.markdown("### Keerthana Bellam")
     st.markdown("AI & Data Science Graduate Student")
     st.markdown("📍 New Jersey, USA")
